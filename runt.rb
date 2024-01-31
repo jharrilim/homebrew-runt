@@ -10,10 +10,10 @@ class Runt < Formula
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/jharrilim/runt/releases/download/#{VERSION}/runt-v#{VERSION}-x86_64-apple-darwin.tar.gz"
+      url "https://github.com/jharrilim/runt/releases/download/v#{VERSION}/runt-v#{VERSION}-x86_64-apple-darwin.tar.gz"
       sha256 X86_64_SHA
     else
-      url "https://github.com/jharrilim/runt/releases/download/#{VERSION}/runt-v#{VERSION}-aarch64-apple-darwin.tar.gz"
+      url "https://github.com/jharrilim/runt/releases/download/v#{VERSION}/runt-v#{VERSION}-aarch64-apple-darwin.tar.gz"
       sha256 AARCH64_SHA
     end
   end
